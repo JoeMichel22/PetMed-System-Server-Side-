@@ -80,6 +80,7 @@
     <Compile Include="AccountRegistration.aspx.designer.cs">
       <DependentUpon>AccountRegistration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
