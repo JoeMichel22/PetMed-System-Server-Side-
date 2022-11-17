@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetMed-System-Server-Side-", "PetMed-System-Server-Side-\PetMed-System-Server-Side-.csproj", "{6ADF3799-E92A-4F61-B4ED-2171E0B1D602}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetMedLibrary", "PetMedLibrary\PetMedLibrary.csproj", "{EC3EAD1C-FDFA-47F6-9473-5FA3925820B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{A4536742-D659-4796-BCEE-93D713F027CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6ADF3799-E92A-4F61-B4ED-2171E0B1D602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ADF3799-E92A-4F61-B4ED-2171E0B1D602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ADF3799-E92A-4F61-B4ED-2171E0B1D602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3EAD1C-FDFA-47F6-9473-5FA3925820B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3EAD1C-FDFA-47F6-9473-5FA3925820B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3EAD1C-FDFA-47F6-9473-5FA3925820B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3EAD1C-FDFA-47F6-9473-5FA3925820B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4536742-D659-4796-BCEE-93D713F027CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4536742-D659-4796-BCEE-93D713F027CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4536742-D659-4796-BCEE-93D713F027CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4536742-D659-4796-BCEE-93D713F027CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
