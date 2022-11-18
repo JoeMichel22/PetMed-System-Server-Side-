@@ -1,0 +1,6 @@
+K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\bin\Debug\PetMedLibrary.dll
+K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\bin\Debug\PetMedLibrary.pdb
+K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.csproj.AssemblyReference.cache
+K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.csproj.CoreCompileInputs.cache
+K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.dll
+K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.pdb

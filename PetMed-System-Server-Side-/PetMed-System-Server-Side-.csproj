@@ -85,6 +85,8 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\dog-bg2.jpg" />
+    <Content Include="Images\seth-dog.jpg" />
     <Content Include="LogIn.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
