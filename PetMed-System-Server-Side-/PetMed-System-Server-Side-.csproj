@@ -87,7 +87,7 @@
     <Content Include="Home.aspx" />
     <Content Include="Images\dog-bg2.jpg" />
     <Content Include="Images\seth-dog.jpg" />
-    <Content Include="LogIn.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -111,12 +111,12 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LogIn.aspx.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LogIn.aspx.designer.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,3 +4,9 @@ K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.cspr
 K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.csproj.CoreCompileInputs.cache
 K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.dll
 K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.pdb
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\PetMedLibrary\bin\Debug\PetMedLibrary.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\PetMedLibrary\bin\Debug\PetMedLibrary.pdb
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.csproj.AssemblyReference.cache
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.csproj.CoreCompileInputs.cache
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.pdb

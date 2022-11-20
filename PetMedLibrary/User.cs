@@ -17,11 +17,14 @@ namespace PetMedLibrary
         private string email;
         private string address;
         private string phoneNumber;
+        private string petName;
+        private string petSpecies;
+        private string petAge;
 
         //default constructor
         public User() { }
 
-        public User(int userID, string username, string password, string email, string address, string phoneNumber)
+        public User(int userID, string username, string password, string email, string address, string phoneNumber, string petName )
         {
             this.userID = userID;
             this.username = username;

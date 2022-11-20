@@ -74,7 +74,7 @@
                                         </div>
 
                                         <div class="d-flex justify-content-center align-items-center pt-3">
-                                            <a href="LogIn.aspx" style="transition: 1ms ease-in-out; animation: b">Log In instead</a>
+                                            <a href="Login.aspx" style="transition: 1ms ease-in-out; animation: b">Log In instead</a>
                                         </div>
 
                                     </div>
