@@ -8,11 +8,20 @@
     <link href="Content/Site.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/bootstrap.min.js"></script>
-    <title></title>
+    <title>Pet Medication</title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="frmPetMedicationSystem" runat="server">
+        <header>
+            <div class="logo"></div>
+            <div class="title">
+                <h1>Pet Medication</h1>
+            </div>
+        </header>
         <div>
+            <nav>
+
+            </nav>
         </div>
     </form>
 </body>

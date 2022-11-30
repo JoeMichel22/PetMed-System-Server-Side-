@@ -4,3 +4,6 @@ K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.cspr
 K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.csproj.CoreCompileInputs.cache
 K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.dll
 K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.pdb
+K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\bin\Debug\Utilities.dll
+K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\bin\Debug\Utilities.pdb
+K:\CIS3342\PetMed-System-Server-Side-\PetMedLibrary\obj\Debug\PetMedLibrary.csproj.CopyComplete
