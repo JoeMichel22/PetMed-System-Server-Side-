@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32825.248
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetMed-System-Server-Side-", "PetMed-System-Server-Side-\PetMed-System-Server-Side-.csproj", "{6ADF3799-E92A-4F61-B4ED-2171E0B1D602}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetMedLibrary", "PetMedLibrary\PetMedLibrary.csproj", "{EC3EAD1C-FDFA-47F6-9473-5FA3925820B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{A4536742-D659-4796-BCEE-93D713F027CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP_PetMed_RESTAPI", "TP_PetMed_RESTAPI\TP_PetMed_RESTAPI.csproj", "{706BEF0A-67C3-466C-80C7-3CD20233A329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{A4536742-D659-4796-BCEE-93D713F027CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4536742-D659-4796-BCEE-93D713F027CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4536742-D659-4796-BCEE-93D713F027CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{706BEF0A-67C3-466C-80C7-3CD20233A329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706BEF0A-67C3-466C-80C7-3CD20233A329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706BEF0A-67C3-466C-80C7-3CD20233A329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706BEF0A-67C3-466C-80C7-3CD20233A329}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
