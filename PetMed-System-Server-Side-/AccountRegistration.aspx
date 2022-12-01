@@ -68,8 +68,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="d-flex justify-content-end pt-3">
-                                            <asp:Button ID="btnReset" CssClass="btn btn-light btn-lg" Text="Reset" runat="server" OnClick="btnReset_Click"></asp:Button>
+                                        <div class="d-flex justify-content-evenly pt-3 align-items-center">
+                                            <asp:CheckBox ID="chkSaveLoginInfo" CssClass="" Text="Save login" runat="server"></asp:CheckBox>
                                             <asp:Button ID="btnCreateUser" CssClass="btn btn-warning btn-lg ms-2 w-50" Text="Confirm" runat="server" OnClick="btnCreateUser_Click"></asp:Button>
                                         </div>
 

@@ -78,13 +78,13 @@ namespace PetMed_System_Server_Side_
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword txtConfirmPassword;
 
         /// <summary>
-        /// btnReset control.
+        /// chkSaveLoginInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReset;
+        protected global::System.Web.UI.WebControls.CheckBox chkSaveLoginInfo;
 
         /// <summary>
         /// btnCreateUser control.

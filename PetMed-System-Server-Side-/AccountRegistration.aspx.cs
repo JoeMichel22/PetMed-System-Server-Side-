@@ -46,11 +46,6 @@ namespace PetMed_System_Server_Side_
             
         }
 
-        protected void btnReset_Click(object sender, EventArgs e)
-        {
-            ClearFields(); //clear fields when reset button is clicked
-        }
-
         //method to create a user account
         private void CreateAccount()
         {
@@ -67,8 +62,16 @@ namespace PetMed_System_Server_Side_
                 {
                     ViewError("Account Added successfully!");
                     Session["email"] = user.Email;
+
+                    //save login information to a cookie
+                    if (chkSaveLoginInfo.Checked)
+                    {
+                        Response.Cookies["authUserCookie"]["email"] = user.Email;
+                        Response.Cookies["authUserCookie"]["password"] = user.Password;
+                    }
+
                     ClearFields();
-                    Response.Redirect("Home.aspx");
+                    Response.Redirect("~/Home.aspx");
 
                 }
             }

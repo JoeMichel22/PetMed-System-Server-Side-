@@ -12,7 +12,7 @@
 </head>
 <body>
     <form id="frmPetMedicationSystem" runat="server">
-        <header>
+        <header class="w-100 d-flex align-items-center">
             <div class="logo"></div>
             <div class="title">
                 <h1>Pet Medication</h1>
