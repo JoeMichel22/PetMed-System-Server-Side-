@@ -60,6 +60,12 @@ namespace PetMedLibrary
             }
         }
 
+        public bool GetUser()
+        {
+            //take code from login page and put it here
+            return false;
+        }
+
         //getters and setters
         public string Name
         {
