@@ -61,7 +61,7 @@ namespace PetMed_System_Server_Side_
                 if (user.CreateUser())
                 {
                     ViewError("Account Added successfully!");
-                    Session["email"] = user.Email;
+                    Session.Add("email", user.Email);
 
                     //save login information to a cookie
                     if (chkSaveLoginInfo.Checked)
