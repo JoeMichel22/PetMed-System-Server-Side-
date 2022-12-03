@@ -13,39 +13,46 @@ namespace PetMed_System_Server_Side_
 {
     public partial class LogIn : System.Web.UI.Page
     {
-        DBConnect connect = new DBConnect();
-        SqlCommand sqlCommand = new SqlCommand();
-        DataSet userData = new DataSet();
+        User user = new User();
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        
+
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string userId;
-
-            sqlCommand.CommandType = CommandType.StoredProcedure;
-            sqlCommand.CommandText = "TP_GetUser";
-            sqlCommand.Parameters.AddWithValue("theEmail", txtEmail);
-            sqlCommand.Parameters.AddWithValue("thePassword", txtPassword);
-            userData = connect.GetDataSet(sqlCommand);
-
-            userId = userData.Tables[0].Rows[0]["UserId"].ToString();
-
-            if (userId != "")
+            if (txtEmail.Value == "")
             {
-                Session.Add("UserID", userId);
-                Session.Add("Email", txtEmail);
+                InputError("Please enter an email.");
+            }
+            else if (txtPassword.Value == "")
+            {
+                InputError("Please enter a password.");
+            }
+            else
+            {
+                GetUser();
+            }
+
+
+        }
+
+        private void GetUser()
+        {
+            user.Email = txtEmail.Value;
+            user.Password = txtPassword.Value;
+
+            if (user.GetUser())
+            {
+                Session.Add("UserID", user.ID);
+                Session.Add("Email", txtEmail.Value);
                 Response.Redirect("Home.aspx");
             }
             else
             {
-                lblError.Text = "Your account has not been found, please make sure you have entered the corect email and password.";
-                lblError.Visible = true;
+                InputError("Your account has not been found, please make sure you have entered the correct email and password.");
             }
-
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
@@ -56,6 +63,12 @@ namespace PetMed_System_Server_Side_
         protected void btnForgot_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void InputError(string error)
+        {
+           lblError.Text = error;
+           lblError.Visible = true;
         }
     }
 }

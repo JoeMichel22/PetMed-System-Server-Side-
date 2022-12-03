@@ -13,18 +13,16 @@ namespace PetMedLibrary
     public class User
     {
         //this class contains information about a user
-        private string userID;
+
         private string name;
         private string password;
         private string email;
         private string address;
         private string phoneNumber;
-        private string id;
 
         //database connection
         DBConnect db = new DBConnect();
         SqlCommand objCommand = new SqlCommand();
-        DataSet dataset = new DataSet();
 
         //default constructor
         public User() { }
@@ -53,7 +51,7 @@ namespace PetMedLibrary
                 objCommand.Parameters.AddWithValue("@thePassword", password);
 
                 db.GetDataSetUsingCmdObj(objCommand);
-
+               
                 return true;
             }
             catch
@@ -64,34 +62,11 @@ namespace PetMedLibrary
 
         public bool GetUser()
         {
-            try
-            {
-                objCommand.CommandType = CommandType.StoredProcedure;
-                objCommand.CommandText = "TP_GetUser";
-                objCommand.Parameters.AddWithValue("theEmail", email);
-                objCommand.Parameters.AddWithValue("thePassword", password);
-
-                db.GetDataSetUsingCmdObj(objCommand);
-                id= dataset.Tables[0].Rows[0]["UserId"].ToString();
-
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-            
+            //take code from login page and put it here
+            return false;
         }
-
-        //public bool LoadUser() { }
 
         //getters and setters
-        public string UserID
-        {
-            get { return userID; }
-            set { userID = value; }
-        }
-
         public string Name
         {
             get { return name; }
@@ -122,10 +97,6 @@ namespace PetMedLibrary
             set { phoneNumber = value; }
         }
 
-        public string ID
-        {
-            get { return id; }
-        }
 
     }
 }

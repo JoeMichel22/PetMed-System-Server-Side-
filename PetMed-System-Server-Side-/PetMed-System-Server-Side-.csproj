@@ -88,8 +88,12 @@
     <Content Include="Images\dog-bg2.jpg" />
     <Content Include="Images\seth-dog.jpg" />
     <Content Include="LogIn.aspx" />
+<<<<<<< HEAD
     <Content Include="Pets.aspx" />
     <Content Include="UserControls\PetDisplay.ascx" />
+=======
+    <Content Include="Order.aspx" />
+>>>>>>> 6a79a48472628a29a0118aec5f4f45e7cbef8fb1
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -120,6 +124,7 @@
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Pets.aspx.cs">
       <DependentUpon>Pets.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -133,6 +138,14 @@
     </Compile>
     <Compile Include="UserControls\PetDisplay.ascx.designer.cs">
       <DependentUpon>PetDisplay.ascx</DependentUpon>
+=======
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+>>>>>>> 6a79a48472628a29a0118aec5f4f45e7cbef8fb1
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
