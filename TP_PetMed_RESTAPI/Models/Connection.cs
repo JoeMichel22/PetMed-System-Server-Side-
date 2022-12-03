@@ -174,7 +174,7 @@ namespace Utilities
             ds = myDataSet;
 
             return myDataSet;
-            
+
         }
 
         public DataRow GetRow(DataSet theDataSet, int theRow)
@@ -211,7 +211,7 @@ namespace Utilities
         {
             // Input parameter is a DataSet. This function is used to Commit
             // the Dataset to the Data Source when updating a disconnected ds.
-            
+
             SqlDataAdapter myDataAdapter = new SqlDataAdapter();
             myDataAdapter.Update(theDataSet);
         }

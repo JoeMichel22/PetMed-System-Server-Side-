@@ -52,9 +52,11 @@ K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\roslyn\VBCS
 K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\roslyn\VBCSCompiler.exe.config
 K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\PetMedLibrary.dll
+K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\System.Data.SqlClient.dll
 K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\Utilities.dll
 K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\PetMedLibrary.pdb
 K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\Utilities.pdb
+K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\System.Data.SqlClient.xml
 K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\obj\Debug\PetMed-System-Server-Side-.csproj.AssemblyReference.cache
 K:\CIS3342\PetMed-System-Server-Side-\PetMed-System-Server-Side-\obj\Debug\PetMed-System-Server-Side-.csproj.CoreCompileInputs.cache
