@@ -1,9 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "fcincs817n0p4dQUDTz4i5JUayQptQ4qZZYUnnZyX/ypX5xoKvI/A+j2i+OR6jEeDdcmg4/ypVQRl3yemsTvnQ==",
+=======
+  "dgSpecHash": "1KQYi4z8gPHcS0zqHCNaA7tBSE4Q0UO7lTtu3QpbbP9CeRx8GoAPAaVVOpF8ZeFPey2ppdelm201nvUHHAdbAg==",
+>>>>>>> 24975580e33d765f3d5c1dd958a99ec252a999b0
   "success": true,
-  "projectFilePath": "K:\\CIS3342\\PetMed-System-Server-Side-\\TP_PetMed_RESTAPI\\TP_PetMed_RESTAPI.csproj",
+  "projectFilePath": "C:\\Users\\josep\\Documents\\GitHub\\PetMed-System-Server-Side-\\TP_PetMed_RESTAPI\\TP_PetMed_RESTAPI.csproj",
   "expectedPackageFiles": [
+<<<<<<< HEAD
     "C:\\Users\\kahle\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\kahle\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\kahle\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
@@ -14,6 +19,17 @@
     "C:\\Users\\kahle\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\kahle\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\kahle\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512"
+=======
+    "C:\\Users\\josep\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\josep\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\josep\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\josep\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\josep\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\josep\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\josep\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\josep\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\josep\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+>>>>>>> 24975580e33d765f3d5c1dd958a99ec252a999b0
   ],
   "logs": []
 }

@@ -19,10 +19,12 @@ namespace PetMedLibrary
         private string email;
         private string address;
         private string phoneNumber;
+        private string id;
 
         //database connection
         DBConnect db = new DBConnect();
         SqlCommand objCommand = new SqlCommand();
+        DataSet dataset = new DataSet();
 
         //default constructor
         public User() { }
@@ -62,8 +64,22 @@ namespace PetMedLibrary
 
         public bool GetUser()
         {
-            //take code from login page and put it here
-            return false;
+            try
+            {
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_GetUser";
+                objCommand.Parameters.AddWithValue("theEmail", email);
+                objCommand.Parameters.AddWithValue("thePassword", password);
+
+                db.GetDataSetUsingCmdObj(objCommand);
+                id = dataset.Tables[0].Rows[0]["UserId"].ToString();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         //getters and setters
@@ -95,6 +111,11 @@ namespace PetMedLibrary
         {
             get { return phoneNumber; }
             set { phoneNumber = value; }
+        }
+
+        public string ID
+        {
+            get { return id; }
         }
 
 
