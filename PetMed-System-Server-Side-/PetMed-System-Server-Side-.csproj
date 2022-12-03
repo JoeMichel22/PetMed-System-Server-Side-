@@ -90,6 +90,9 @@
     <Content Include="Home.aspx" />
     <Content Include="Images\dog-bg2.jpg" />
     <Content Include="Images\seth-dog.jpg" />
+    <Content Include="Images\undraw_Dog.png" />
+    <Content Include="Images\undraw_friends.png" />
+    <Content Include="Images\undraw_friends.svg" />
     <Content Include="LogIn.aspx" />
     <Content Include="Pets.aspx" />
     <Content Include="UserControls\PetDisplay.ascx" />

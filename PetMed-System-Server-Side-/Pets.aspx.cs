@@ -24,7 +24,7 @@ namespace PetMed_System_Server_Side_
 
             for (int recordCount = 0; recordCount < count; recordCount++)
             {
-                PetDisplay ctrl = (PetDisplay)LoadControl("PetDisplay.ascx");
+                PetDisplay ctrl = (PetDisplay)LoadControl("UserControls/PetDisplay.ascx");
 
                 ctrl.DataBind();
 

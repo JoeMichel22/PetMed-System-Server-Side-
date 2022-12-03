@@ -12,14 +12,19 @@
 </head>
 <body>
     <form id="frmPetMedicationSystem" runat="server">
-        <header class="w-100 d-flex align-items-center">
-            <div class="logo"></div>
-            <div class="title">
-                <h1>Pet Medication</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="Pets.aspx">Your Pets</a></li>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between px-2">
+                <img src="./Images/undraw_friends.svg" width="40" height="40" alt="logo" />
+                <div class="navbar-text">
+                    <h2>Pet Medication System</h2>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.aspx">Home</a>
+                    </li>
+                    <li calss="nav-item">
+                        <a class="nav-link" href="Pets.aspx">My Pets</a>
+                    </li>
                 </ul>
             </nav>
         </header>

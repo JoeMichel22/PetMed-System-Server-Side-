@@ -71,7 +71,7 @@ namespace PetMedLibrary
                 objCommand.Parameters.AddWithValue("theEmail", email);
                 objCommand.Parameters.AddWithValue("thePassword", password);
 
-                db.GetDataSetUsingCmdObj(objCommand);
+                dataset = db.GetDataSetUsingCmdObj(objCommand);
                 id= dataset.Tables[0].Rows[0]["UserId"].ToString();
 
                 return true;

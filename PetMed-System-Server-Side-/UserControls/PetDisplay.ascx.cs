@@ -14,9 +14,8 @@ namespace PetMed_System_Server_Side_
     public partial class PetDisplay : System.Web.UI.UserControl
     {
         //Custom user control for displaying pets
-
-        User user = new User();
-        Pet pet = new Pet();
+        
+        string userId;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -33,12 +32,18 @@ namespace PetMed_System_Server_Side_
 
         public override void DataBind()
         {
-           DataSet ds = new DataSet();
-            ds = pet.GetPets(user.UserID);
+            Pet pet = new Pet();
+            DataSet ds = new DataSet();
+            userId = Session["userId"].ToString();
 
-            lblPetName.Text = ds.Tables[0].Rows[0]["PetName"].ToString();
-            lblPetSpecies.Text = ds.Tables[0].Rows[0]["PetSpecies"].ToString();
-            lblPetAge.Text = ds.Tables[0].Rows[0]["PetAge"].ToString();
+            ds = pet.GetPets(userId);
+
+            if (ds.Tables[0].Rows.Count != 0)
+            {
+                lblPetName.Text = ds.Tables[0].Rows[0]["Name"].ToString();
+                lblPetSpecies.Text = ds.Tables[0].Rows[0]["Species"].ToString();
+                lblPetAge.Text = ds.Tables[0].Rows[0]["Age"].ToString();
+            }
         }
     }
 }
