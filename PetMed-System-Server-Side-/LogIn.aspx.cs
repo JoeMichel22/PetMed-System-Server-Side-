@@ -46,18 +46,21 @@ namespace PetMed_System_Server_Side_
             if (user.GetUser())
             {
                 Session.Add("UserID", user.ID);
-                Session.Add("Email", txtEmail.Value);
+                Session.Add("Email", user.Email);
+
+                //save login information to a cookie
+                if (chkSaveLoginInfo.Checked)
+                {
+                    Response.Cookies["authUserCookie"]["email"] = user.Email;
+                    Response.Cookies["authUserCookie"]["password"] = user.Password;
+                }
+
                 Response.Redirect("Home.aspx");
             }
             else
             {
                 InputError("Your account has not been found, please make sure you have entered the correct email and password.");
             }
-        }
-
-        protected void btnRegister_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AccountRegistration.aspx");
         }
 
         protected void btnForgot_Click(object sender, EventArgs e)

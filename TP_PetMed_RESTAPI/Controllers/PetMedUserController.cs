@@ -13,20 +13,23 @@ namespace TP_PetMed_RESTAPI.Controllers
     [Route("PetMedUser/[controller]")]
     public class PetMedUserController : ControllerBase
     {
-        User request = new User();
+        User wanted = new User();
 
-        [HttpGet("GetUser/{email}/{password}")] //ask about this
-        public bool GetUser(string email, string password)
+        [HttpGet("GetUser/{email}")]
+        public bool GetUser(string email)
         {
-            request.Email = email;
-            request.Password = password;
+            wanted.Email = email;
 
-            if (request.GetUser())
+            if (wanted.GetUser())
             {
-                
+                return true;
+            }
+            else
+            {
+                return false;
             }
 
-            return false;
+            
         }
 
 
