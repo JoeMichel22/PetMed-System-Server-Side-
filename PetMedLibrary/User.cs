@@ -13,7 +13,7 @@ namespace PetMedLibrary
     public class User
     {
         //this class contains information about a user
-
+        private string userID;
         private string name;
         private string password;
         private string email;
@@ -51,7 +51,7 @@ namespace PetMedLibrary
                 objCommand.Parameters.AddWithValue("@thePassword", password);
 
                 db.GetDataSetUsingCmdObj(objCommand);
-               
+
                 return true;
             }
             catch
@@ -67,6 +67,12 @@ namespace PetMedLibrary
         }
 
         //getters and setters
+        public string UserID
+        {
+            get { return userID; }
+            set { userID = value; }
+        }
+
         public string Name
         {
             get { return name; }

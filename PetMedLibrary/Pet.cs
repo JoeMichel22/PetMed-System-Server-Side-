@@ -17,15 +17,43 @@ namespace PetMedLibrary
 
         DBConnect db = new DBConnect();
         SqlCommand objCommand = new SqlCommand();
+        User user = new User();
 
-        public void AddPet(int userID)
+        public bool AddPet(int userID)
         {
-            objCommand.CommandType = CommandType.StoredProcedure;
-            objCommand.CommandText = "TP_AddPet";
-            objCommand.Parameters.AddWithValue("@name", name);
-            objCommand.Parameters.AddWithValue("@species",species);
-            objCommand.Parameters.AddWithValue("@age", age);
-            objCommand.Parameters.AddWithValue("@owner", userID);
+            try
+            {
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_AddPet";
+                objCommand.Parameters.AddWithValue("@name", name);
+                objCommand.Parameters.AddWithValue("@species", species);
+                objCommand.Parameters.AddWithValue("@age", age);
+                objCommand.Parameters.AddWithValue("@owner", userID);
+
+                db.GetDataSetUsingCmdObj(objCommand);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public DataSet GetPets(string userID)
+        {
+            try
+            {
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_GetPet";
+                objCommand.Parameters.AddWithValue("@userID", userID);
+
+                return db.GetDataSetUsingCmdObj(objCommand);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public Pet() 

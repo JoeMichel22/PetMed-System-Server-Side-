@@ -17,11 +17,15 @@
             <div class="title">
                 <h1>Pet Medication</h1>
             </div>
-        </header>
-        <div>
             <nav>
-
+                <ul>
+                    <li><a href="Pets.aspx">Your Pets</a></li>
+                </ul>
             </nav>
+        </header>
+
+        <div>
+            <asp:Label ID="lblWelcome" runat="server"></asp:Label>
         </div>
     </form>
 </body>

@@ -88,6 +88,8 @@
     <Content Include="Images\dog-bg2.jpg" />
     <Content Include="Images\seth-dog.jpg" />
     <Content Include="LogIn.aspx" />
+    <Content Include="Pets.aspx" />
+    <Content Include="UserControls\PetDisplay.ascx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -117,6 +119,20 @@
     </Compile>
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pets.aspx.cs">
+      <DependentUpon>Pets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pets.aspx.designer.cs">
+      <DependentUpon>Pets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PetDisplay.ascx.cs">
+      <DependentUpon>PetDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PetDisplay.ascx.designer.cs">
+      <DependentUpon>PetDisplay.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
