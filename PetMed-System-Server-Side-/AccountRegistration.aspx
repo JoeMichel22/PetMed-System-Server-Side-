@@ -28,25 +28,25 @@
                                         <h3 class="mb-3 text-uppercase">Account Registration</h3>
 
                                         <div class="form-outline mb-4">
-                                            <input type="text" id="txtName" class="form-control form-control-lg" runat="server" />
+                                            <input type="text" id="txtName" class="form-control form-control-lg" runat="server" name="name" />
                                             <label class="form-label" for="txtName">Name</label>
                                         </div>
 
                                         <div class="form-outline mb-4">
-                                            <input type="text" id="txtAddress" class="form-control form-control-lg" runat="server" />
+                                            <input type="text" id="txtAddress" class="form-control form-control-lg" runat="server" name="address"/>
                                             <label class="form-label" for="txtAddress">Address</label>
                                         </div>
 
                                         <div class="row">
                                             <div class="col-md-6 mb-2">
                                                 <div class="form-outline mb-4">
-                                                    <input type="email" id="txtEmail" class="form-control form-control-lg" runat="server" />
+                                                    <input type="email" id="txtEmail" class="form-control form-control-lg" runat="server" name="email"/>
                                                     <label class="form-label" for="txtEmail">Email</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-2">
                                                 <div class="form-outline mb-4">
-                                                    <input type="text" id="txtPhoneNumber" class="form-control form-control-lg" runat="server" />
+                                                    <input type="text" id="txtPhoneNumber" class="form-control form-control-lg" runat="server" name="phoneNumber" />
                                                     <label class="form-label" for="txtPhoneNumber">Phone</label>
                                                 </div>
                                             </div>
@@ -55,7 +55,7 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
                                                 <div class="form-outline mb-4">
-                                                    <input type="password" id="txtPassword" class="form-control form-control-lg" runat="server" />
+                                                    <input type="password" id="txtPassword" class="form-control form-control-lg" runat="server" name="password"/>
                                                     <label class="form-label" for="form3Example97">Password</label>
                                                 </div>
                                             </div>
@@ -69,7 +69,7 @@
                                         </div>
 
                                         <div class="d-flex justify-content-evenly pt-3 align-items-center">
-                                            <asp:CheckBox ID="chkSaveLoginInfo" CssClass="" Text="Save login" runat="server"></asp:CheckBox>
+                                            <asp:CheckBox ID="chkSaveLoginInfo" CssClass="" Text="Save Login" runat="server"></asp:CheckBox>
                                             <asp:Button ID="btnCreateUser" CssClass="btn btn-warning btn-lg ms-2 w-50" Text="Confirm" runat="server" OnClick="btnCreateUser_Click"></asp:Button>
                                         </div>
 

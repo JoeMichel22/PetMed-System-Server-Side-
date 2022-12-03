@@ -91,6 +91,7 @@
     <Content Include="Images\dog-bg2.jpg" />
     <Content Include="Images\seth-dog.jpg" />
     <Content Include="LogIn.aspx" />
+    <Content Include="Order.aspx" />
     <Content Include="Pets.aspx" />
     <Content Include="UserControls\PetDisplay.ascx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pets.aspx.cs">
       <DependentUpon>Pets.aspx</DependentUpon>

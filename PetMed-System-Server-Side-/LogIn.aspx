@@ -27,12 +27,16 @@
                                 <label class="form-label" for="txtEmail">Email</label>
                             </div>
                             <div class="form-outline mb-4">
-                                <input type="text" id="txtPassword" class="form-control form-control-lg" runat="server" />
+                                <input type="password" id="txtPassword" class="form-control form-control-lg" runat="server" />
                                 <label class="form-label" for="txtPassword">Password</label>
+                            </div>
+
+                            <div class="d-flex justify-content-start pt-3">
+                                <asp:CheckBox ID="chkSaveLoginInfo" CssClass="" Text="Save Login" runat="server"></asp:CheckBox>
                             </div>
                             <div class="d-flex justify-content-start pt-3">
                                 <asp:Button ID="btnForgot" CssClass="btn btn-light btn-lg" Text="Forgot Password" runat="server" OnClick="btnForgot_Click"></asp:Button>
-                                <asp:Button ID="btnRegister" CssClass="btn btn-light btn-lg ms-2 w-50" Text="Register" runat="server" OnClick="btnRegister_Click"></asp:Button>
+                                <a href="AccountRegistration.aspx" style="transition: 1ms ease-in-out; animation: b" class="m-3">Register</a>
                             </div>
                             <div class="d-flex justify-content-center pt-3">
                                 <asp:Button ID="btnLogin" CssClass="btn btn-warning btn-lg ms-2 w-50" Text="Login" runat="server" OnClick="btnLogin_Click"></asp:Button>
