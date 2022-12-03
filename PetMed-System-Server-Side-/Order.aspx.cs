@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Collections;
+using PetMedLibrary;
 
 namespace PetMed_System_Server_Side_
 {
@@ -11,6 +13,16 @@ namespace PetMed_System_Server_Side_
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                //LoadRepeater(arraylist variable??);
+            }
+        }
+
+        private void LoadRepeater(ArrayList orderList)
+        {
+            rptOrder.DataSource = orderList;
+            rptOrder.DataBind();
 
         }
     }
