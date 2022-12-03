@@ -16,7 +16,9 @@ namespace PetMed_System_Server_Side_
             if(!IsPostBack)
             {
                 userID = int.Parse(Session["userID"].ToString());
-                email = Session["email"].ToString();    
+                email = Session["email"].ToString(); 
+
+                lblWelcome.Text = "Welcome" + email;
             }
         }
     }
