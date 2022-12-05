@@ -96,6 +96,9 @@
     <Content Include="LogIn.aspx" />
     <Content Include="Order.aspx" />
     <Content Include="Pets.aspx" />
+    <Content Include="Profile.aspx" />
+    <Content Include="Services\TP_PetMed.asmx" />
+    <Content Include="Styles\home.css" />
     <Content Include="UserControls\PetDisplay.ascx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -140,6 +143,17 @@
     </Compile>
     <Compile Include="Pets.aspx.designer.cs">
       <DependentUpon>Pets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\TP_PetMed.asmx.cs">
+      <DependentUpon>TP_PetMed.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserControls\PetDisplay.ascx.cs">
       <DependentUpon>PetDisplay.ascx</DependentUpon>
@@ -190,6 +204,9 @@
       <Project>{a4536742-d659-4796-bcee-93d713f027cb}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

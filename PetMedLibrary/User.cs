@@ -62,6 +62,7 @@ namespace PetMedLibrary
             }
         }
 
+        //method returns true if user has been found and false if user is not found or error occurred
         public bool GetUser()
         {
             try
@@ -74,6 +75,8 @@ namespace PetMedLibrary
                 dataset = db.GetDataSetUsingCmdObj(objCommand);
                 id= dataset.Tables[0].Rows[0]["UserId"].ToString();
 
+                objCommand.Parameters.Clear();
+
                 return true;
             }
             catch
@@ -83,6 +86,7 @@ namespace PetMedLibrary
             
         }
 
+<<<<<<< HEAD
         public string GetPassword(string email)
         {
             try
@@ -101,6 +105,51 @@ namespace PetMedLibrary
                 return "";
             }
         }
+=======
+        //Method to update user information
+        public bool UpdateUser(string userID)
+        {
+            try
+            {
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_UpdateUSer";
+                objCommand.Parameters.AddWithValue("@ID", int.Parse(userID));
+                objCommand.Parameters.AddWithValue("@Name", name);
+                objCommand.Parameters.AddWithValue("@Email", email);
+                objCommand.Parameters.AddWithValue("@Address", address);
+                objCommand.Parameters.AddWithValue("@Phone", phoneNumber);
+
+                db.DoUpdateUsingCmdObj(objCommand);
+
+                objCommand.Parameters.Clear();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        //(overloaded) Method returns a dataset containing the user found based on the ID
+        public DataSet GetUser(string userID)
+        {
+            try
+            {
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_LoadUser";
+                objCommand.Parameters.AddWithValue("theId", userID);
+
+                return db.GetDataSetUsingCmdObj(objCommand);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        //public bool LoadUser() { }
+>>>>>>> 529cd6c25f65813ca01d119143cfde8e50d9653e
 
         //getters and setters
         public string UserID

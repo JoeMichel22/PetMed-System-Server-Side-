@@ -18,10 +18,21 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
+<<<<<<< HEAD
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
+=======
           "ref/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+>>>>>>> e48a9aaee1e4d6e21af4881dd076ba4edca738d0
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -77,10 +88,21 @@
           "runtime.native.System.Data.SqlClient.sni": "4.7.0"
         },
         "compile": {
+<<<<<<< HEAD
+          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
+=======
           "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/System.Data.SqlClient.dll": {}
+>>>>>>> e48a9aaee1e4d6e21af4881dd076ba4edca738d0
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -100,10 +122,21 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
+<<<<<<< HEAD
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+=======
           "ref/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+>>>>>>> e48a9aaee1e4d6e21af4881dd076ba4edca738d0
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
@@ -115,10 +148,21 @@
       "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
+<<<<<<< HEAD
+          "ref/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+=======
           "ref/netcoreapp3.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+>>>>>>> e48a9aaee1e4d6e21af4881dd076ba4edca738d0
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
@@ -524,7 +568,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
+      "message": "Problem reading the cache file K:\\CIS3342\\PetMed-System-Server-Side-\\TP_PetMed_RESTAPI\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
       "message": "Problem reading the cache file C:\\Users\\josep\\Documents\\GitHub\\PetMed-System-Server-Side-\\TP_PetMed_RESTAPI\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> e48a9aaee1e4d6e21af4881dd076ba4edca738d0
     }
   ]
 }

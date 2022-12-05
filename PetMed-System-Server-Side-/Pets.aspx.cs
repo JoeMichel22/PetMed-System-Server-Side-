@@ -1,4 +1,5 @@
-﻿using PetMedLibrary;
+﻿using PetMed_System_Server_Side_.Services;
+using PetMedLibrary;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -22,14 +23,28 @@ namespace PetMed_System_Server_Side_
 
             int count = ds.Tables[0].Rows.Count;
 
-            for (int recordCount = 0; recordCount < count; recordCount++)
+            if(count > 0)
             {
-                PetDisplay ctrl = (PetDisplay)LoadControl("UserControls/PetDisplay.ascx");
+                for (int recordCount = 0; recordCount < count; recordCount++)
+                {
+                    PetDisplay ctrl = (PetDisplay)LoadControl("UserControls/PetDisplay.ascx");
 
-                ctrl.DataBind();
+                    ctrl.PetName = ds.Tables[0].Rows[recordCount]["Name"].ToString();
+                    ctrl.Species = ds.Tables[0].Rows[recordCount]["Species"].ToString();
+                    ctrl.PetAge = ds.Tables[0].Rows[recordCount]["Age"].ToString();
+                    ctrl.DataBind();
 
-                Form.Controls.Add(ctrl);
+                    Form.Controls.AddAt(0, ctrl);
+                }
+            } else
+            {
+
             }
+        }
+
+        public void GetPets()
+        {
+            
         }
     }
 }

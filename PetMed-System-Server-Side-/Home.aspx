@@ -7,6 +7,7 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/home.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/bootstrap.min.js"></script>
     <title>Pet Medication</title>
 </head>
@@ -25,13 +26,22 @@
                     <li calss="nav-item">
                         <a class="nav-link" href="Pets.aspx">My Pets</a>
                     </li>
+                    <li calss="nav-item">
+                        <a class="nav-link" href="Profile.aspx">Profile</a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
-        <div>
-            <asp:Label ID="lblWelcome" runat="server"></asp:Label>
+        <div class="d-flex justify-content-center">
+            <asp:Label CssClass="welcome-label my-1" ID="lblWelcome" runat="server"></asp:Label>
         </div>
+
+        <main>
+            <div>
+                <asp:DropDownList ID="ddlMedicationFilter" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlMedicationFilter_SelectedIndexChanged"></asp:DropDownList>
+            </div>
+        </main>
     </form>
 </body>
 </html>
