@@ -83,7 +83,24 @@ namespace PetMedLibrary
             
         }
 
-        //public bool LoadUser() { }
+        public string GetPassword(string email)
+        {
+            try
+            {
+
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_GetPassword";
+                objCommand.Parameters.AddWithValue("theEmail", email);
+
+                dataset = db.GetDataSetUsingCmdObj(objCommand);
+
+                return dataset.Tables[0].Rows[0]["Password"].ToString();
+            }
+            catch
+            {
+                return "";
+            }
+        }
 
         //getters and setters
         public string UserID

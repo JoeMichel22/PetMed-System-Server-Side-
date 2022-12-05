@@ -7,3 +7,12 @@ K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.CoreC
 K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.CopyComplete
 K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.dll
 K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.pdb
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Debug\Utilities.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Debug\Utilities.pdb
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Debug\System.Data.SqlClient.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Debug\System.Data.SqlClient.xml
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.CopyComplete
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.pdb

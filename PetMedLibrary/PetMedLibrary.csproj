@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Emailing.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Medication.cs" />
     <Compile Include="User.cs" />

@@ -14,6 +14,7 @@ namespace PetMed_System_Server_Side_
     public partial class LogIn : System.Web.UI.Page
     {
         User user = new User();
+        Emailing autoEmail = new Emailing();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -65,7 +66,29 @@ namespace PetMed_System_Server_Side_
 
         protected void btnForgot_Click(object sender, EventArgs e)
         {
+            if(txtEmail.Value == "")
+            {
+                InputError("Please enter your email above first.");
+            }
+            else
+            {
+                string forgotten;
+                forgotten = "Here is your the password you forgot " + user.GetPassword(txtEmail.Value) + ". Try not to forget it again -__-";
 
+                if(forgotten == "")
+                {
+                    InputError("The email entered was not found. Please check and try again.");
+                }
+                else
+                {
+                    autoEmail.Reciever = txtEmail.Value;
+                    autoEmail.Message = forgotten;
+
+                    InputError(autoEmail.RecoverPassword());
+                }
+
+                
+            }
         }
 
         public void InputError(string error)

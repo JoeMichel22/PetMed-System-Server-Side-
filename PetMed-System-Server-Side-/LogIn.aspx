@@ -35,7 +35,7 @@
                                 <asp:CheckBox ID="chkSaveLoginInfo" CssClass="" Text="Save Login" runat="server"></asp:CheckBox>
                             </div>
                             <div class="d-flex justify-content-start pt-3">
-                                <asp:Button ID="btnForgot" CssClass="btn btn-light btn-lg" Text="Forgot Password" runat="server" OnClick="btnForgot_Click"></asp:Button>
+                                <asp:Button ID="btnForgot" CssClass="btn btn-light btn-sm" Text="Forgot Password" runat="server" OnClick="btnForgot_Click"></asp:Button>
                                 <a href="AccountRegistration.aspx" style="transition: 1ms ease-in-out; animation: b" class="m-3">Register</a>
                             </div>
                             <div class="d-flex justify-content-center pt-3">
