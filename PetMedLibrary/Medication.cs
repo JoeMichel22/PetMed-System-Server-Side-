@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,6 +17,7 @@ namespace PetMedLibrary
         private string medDescription;
         private string species;
         private int medStock;
+        private double medPrice;
 
         public int MedID
         {
@@ -51,5 +54,20 @@ namespace PetMedLibrary
             get { return medStock; }
             set { medStock = value; }
         }
+
+        public double MedPrice
+        {
+            get { return medPrice; }
+            set { medPrice = value; }   
+        }
+
+        //public DataSet GetMedication(string species)
+        //{
+
+        //    try
+        //    {
+
+        //    }
+        //}
     }
 }

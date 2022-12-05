@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using System.Xml;
 using Utilities;
 
 namespace PetMed_System_Server_Side_.Services
@@ -27,29 +28,11 @@ namespace PetMed_System_Server_Side_.Services
         }
 
         [WebMethod]
-        //public string GetPets(string userID)
-        //{
-        //    SqlCommand objCommand = new SqlCommand();
-        //    DBConnect db = new DBConnect();
-        //    string petName;
-        //    try
-        //    {
-        //        objCommand.CommandType = CommandType.StoredProcedure;
-        //        objCommand.CommandText = "TP_GetPet";
-        //        objCommand.Parameters.AddWithValue("@userID", userID);
-
-        //        return  petName = db.GetDataSetUsingCmdObj(objCommand).Tables[0].Rows[0]["Name"].ToString();
-        //    }
-        //    catch
-        //    {
-        //        return null;
-        //    }
-        //}
-
         public DataSet GetPets(string userID)
         {
             SqlCommand objCommand = new SqlCommand();
             DBConnect db = new DBConnect();
+
             try
             {
                 objCommand.CommandType = CommandType.StoredProcedure;
@@ -57,6 +40,27 @@ namespace PetMed_System_Server_Side_.Services
                 objCommand.Parameters.AddWithValue("@userID", userID);
 
                 return db.GetDataSetUsingCmdObj(objCommand);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        [WebMethod]
+        public DataSet GetMedication(string species)
+        {
+            SqlCommand objCommand = new SqlCommand();
+            DBConnect db = new DBConnect();
+
+            try
+            {
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_Medication";
+                objCommand.Parameters.AddWithValue("@species", species);
+
+                return db.GetDataSetUsingCmdObj(objCommand);
+
             }
             catch
             {
