@@ -1,0 +1,12 @@
+﻿body {
+}
+
+.welcome-label {
+    font-size: 1.5rem;
+    color: orange;
+}
+
+#profile-info {
+    width: 30rem;
+    margin: 10px auto;
+}

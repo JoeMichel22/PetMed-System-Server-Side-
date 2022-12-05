@@ -24,11 +24,14 @@
                 <li calss="nav-item">
                     <a class="nav-link" href="Pets.aspx">Your Pets</a>
                 </li>
+                <li calss="nav-item">
+                    <a class="nav-link" href="Profile.aspx">Profile</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <form id="form1" runat="server">
-        <div>
+    <form class="d-flex" id="frmPetDisplay" runat="server">
+        <div id="dvDisplayPets" runat="server">
         </div>
     </form>
 </body>

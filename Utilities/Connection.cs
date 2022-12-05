@@ -156,6 +156,7 @@ namespace Utilities
                 theCommandObject.Connection.Open();
                 int ret = theCommandObject.ExecuteNonQuery();
                 theCommandObject.Connection.Close();
+                theCommandObject.Parameters.Clear();
                 return ret;
             }
             catch (Exception ex)
@@ -172,6 +173,7 @@ namespace Utilities
             DataSet myDataSet = new DataSet();
             myDataAdapter.Fill(myDataSet);
             ds = myDataSet;
+            theCommand.Parameters.Clear();
 
             return myDataSet;
             

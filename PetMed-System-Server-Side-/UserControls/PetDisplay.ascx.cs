@@ -16,34 +16,59 @@ namespace PetMed_System_Server_Side_
         //Custom user control for displaying pets
         
         string userId;
+        string petID;
+        string petName;
+        string species;
+        string petAge;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        //[Category('Misc')]
-        //public String ProductID
 
-        //{
-        //    get { return petID; }
+        //define the properties for the customer use control for the pets
+        [Category("Misc")]
+        public string PetID
+        {
+            get { return petID; }
+            set { petID = value; }
+        }
 
-        //    set { petID = value; }
-        //}
+        [Category("Misc")]
+        public String PetName
+        {
+            get { return petName; }
 
+            set { petName = value; }
+        }
+
+        [Category("Misc")]
+        public string Species
+        {
+            get { return species; }
+            set { species = value; }
+        }
+
+        [Category("Misc")]
+        public string PetAge
+        {
+            get { return petAge; }
+            set { petAge = value; }
+        }
+
+        //method that is called to the Pet page to bind the control upon page load
         public override void DataBind()
         {
-            Pet pet = new Pet();
-            DataSet ds = new DataSet();
-            userId = Session["userId"].ToString();
+            //asing the appropriate values
+            lblPetName.Text = petName;
+            lblPetSpecies.Text = species;
+            lblPetAge.Text = petAge;
+        }
 
-            ds = pet.GetPets(userId);
+        protected void btnDeletePet_Click(object sender, EventArgs e)
+        {
 
-            if (ds.Tables[0].Rows.Count != 0)
-            {
-                lblPetName.Text = ds.Tables[0].Rows[0]["Name"].ToString();
-                lblPetSpecies.Text = ds.Tables[0].Rows[0]["Species"].ToString();
-                lblPetAge.Text = ds.Tables[0].Rows[0]["Age"].ToString();
-            }
         }
     }
 }
