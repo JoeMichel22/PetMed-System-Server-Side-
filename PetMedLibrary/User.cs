@@ -86,7 +86,6 @@ namespace PetMedLibrary
             
         }
 
-<<<<<<< HEAD
         public string GetPassword(string email)
         {
             try
@@ -105,7 +104,6 @@ namespace PetMedLibrary
                 return "";
             }
         }
-=======
         //Method to update user information
         public bool UpdateUser(string userID)
         {
@@ -148,8 +146,6 @@ namespace PetMedLibrary
             }
         }
 
-        //public bool LoadUser() { }
->>>>>>> 529cd6c25f65813ca01d119143cfde8e50d9653e
 
         //getters and setters
         public string UserID
