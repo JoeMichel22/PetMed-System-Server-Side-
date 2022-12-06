@@ -1,0 +1,9 @@
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Release\Utilities.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Release\Utilities.pdb
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Release\System.Data.SqlClient.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Release\System.Data.SqlClient.xml
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Release\Utilities.csproj.AssemblyReference.cache
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Release\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Release\Utilities.csproj.CopyComplete
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Release\Utilities.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Release\Utilities.pdb
