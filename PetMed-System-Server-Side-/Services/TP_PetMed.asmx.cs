@@ -56,7 +56,7 @@ namespace PetMed_System_Server_Side_.Services
             try
             {
                 objCommand.CommandType = CommandType.StoredProcedure;
-                objCommand.CommandText = "TP_Medication";
+                objCommand.CommandText = "TP_GetMedication";
                 objCommand.Parameters.AddWithValue("@species", species);
 
                 return db.GetDataSetUsingCmdObj(objCommand);

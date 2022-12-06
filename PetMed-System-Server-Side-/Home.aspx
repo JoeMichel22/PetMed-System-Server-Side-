@@ -37,9 +37,37 @@
             <asp:Label CssClass="welcome-label my-1" ID="lblWelcome" runat="server"></asp:Label>
         </div>
 
-        <main>
+        <main class="py-3 px-4">
             <div>
-                <asp:DropDownList ID="ddlMedicationFilter" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlMedicationFilter_SelectedIndexChanged"></asp:DropDownList>
+                <asp:DropDownList CssClass="border-2" ID="ddlMedicationFilter" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlMedicationFilter_SelectedIndexChanged"></asp:DropDownList>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <div>
+                     <asp:Label CssClass="p-3 w-100" ID="lblError" runat="server"></asp:Label>
+                </div>
+                <asp:GridView ID="gvMedication" CssClass="mydatagrid table table-striped" runat="server" AutoGenerateColumns="False">
+                    <Columns>
+                        <asp:TemplateField HeaderText="Select Medication">
+                            <ItemTemplate>
+                                <asp:CheckBox ID="chkSelectMedication" runat="server" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:BoundField DataField="MedicationName" HeaderText="Drug Name" ReadOnly="True" SortExpression="Drug Name" />
+                        <asp:BoundField DataField="Description" HeaderText="Description" ReadOnly="True" SortExpression="Description" />
+                        <asp:BoundField DataField="Diseases" HeaderText="Diseases" ReadOnly="True" SortExpression="Diseases" />
+                        <asp:BoundField DataField="Species" HeaderText="Species" ReadOnly="True" SortExpression="Species" />
+                        <asp:BoundField DataField="Stock" HeaderText="Stock" ReadOnly="True" SortExpression="Stock" />
+                        <asp:BoundField DataField="Price" HeaderText="Base Price" ReadOnly="True" SortExpression="Price" />
+                        <asp:TemplateField HeaderText="Quantity">
+                            <ItemTemplate>
+                                <asp:TextBox ID="txtQuantity" runat="server"></asp:TextBox>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+            </div>
+            <div>
+                <asp:Button ID="btnOrder" CssClass="btn btn-primary" Text="Order" runat="server" OnClick="btnOrder_Clicked"/>
             </div>
         </main>
     </form>
