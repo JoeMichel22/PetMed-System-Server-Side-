@@ -26,24 +26,6 @@ namespace PetMed_System_Server_Side_
             userID = Session["userId"].ToString();
             if (!IsPostBack)
             {
-                WebRequest request = WebRequest.Create(apiURL + "GetUserProfile/" + userID);
-                WebResponse response = request.GetResponse();
-
-                Stream dataStream = response.GetResponseStream();
-                StreamReader dataReader = new StreamReader(dataStream);
-                String userData = dataReader.ReadToEnd();
-                dataReader.Close();
-                response.Close();
-
-                
-                //JavaScriptSerializer js = new JavaScriptSerializer();
-                //user = js.Deserialize<User>(userData);
-                //txtName.Value = user.Name;
-                //txtEmail.Value = user.Email;
-                //txtAddress.Value = user.Address;
-                //txtPhone.Value = user.PhoneNumber;
-
-                //Uses method call from User class to fill text boxes
                 ds = user.GetUser(userID);
                 txtName.Value = ds.Tables[0].Rows[0]["Name"].ToString();
                 txtEmail.Value = ds.Tables[0].Rows[0]["Email"].ToString();
