@@ -72,8 +72,7 @@ namespace PetMed_System_Server_Side_
             }
             else
             {
-                string forgotten;
-                forgotten = "Here is your the password you forgot " + user.GetPassword(txtEmail.Value) + ". Try not to forget it again -__-";
+                string forgotten = user.GetPassword(txtEmail.Value);
 
                 if(forgotten == "")
                 {
@@ -81,6 +80,8 @@ namespace PetMed_System_Server_Side_
                 }
                 else
                 {
+                    forgotten = "Here is your the password you forgot " + user.GetPassword(txtEmail.Value) + ". Try not to forget it again -__-";
+
                     autoEmail.Reciever = txtEmail.Value;
                     autoEmail.Message = forgotten;
 

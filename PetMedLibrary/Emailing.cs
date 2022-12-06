@@ -17,6 +17,7 @@ namespace PetMedLibrary
         private string emailBody;
         private string emailHost = "smtp.temple.edu";
         private MailPriority emailPriority = MailPriority.Normal;
+        private bool htmlBody = true;
 
         public Emailing()
         {
@@ -52,6 +53,11 @@ namespace PetMedLibrary
             get { return emailPriority; }
             set { emailPriority = value; }
         }
+        public bool HTMLBody
+        {
+            get { return htmlBody; }
+            set { htmlBody = value; }
+        }
 
         public string RecoverPassword()
         {
@@ -62,6 +68,7 @@ namespace PetMedLibrary
                 mailOBJ.Subject = emailSubject;
                 mailOBJ.Body = emailBody;
                 mailOBJ.Priority = emailPriority;
+                mailOBJ.IsBodyHtml = htmlBody;
 
                 SmtpClient smtpServer = new SmtpClient(emailHost);
                 smtpServer.Send(mailOBJ);
