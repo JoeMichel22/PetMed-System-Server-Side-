@@ -62,8 +62,6 @@ namespace PetMed_System_Server_Side_
             JavaScriptSerializer js = new JavaScriptSerializer();
             String userJson = js.Serialize(user);
 
-            
-
             try
             {
                 WebRequest request = WebRequest.Create(apiURL + "CreateUser");

@@ -13,6 +13,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="d-flex justify-content-center">
+            <label>Your order is shown in the table below.</label> <br />
             <table>
                 <tr>
                     <th>Medication ID</th>
