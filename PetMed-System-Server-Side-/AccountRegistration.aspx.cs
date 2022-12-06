@@ -15,7 +15,7 @@ namespace PetMed_System_Server_Side_
     public partial class AccountRegistration : System.Web.UI.Page
     {
         User user = new User();
-        string apiURL = "http://cis-iis2.temple.edu/users/tun69277/TermProjectTest/";
+        string apiURL = "http://cis-iis2.temple.edu/users/tun69277/TermProject/";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -81,8 +81,9 @@ namespace PetMed_System_Server_Side_
                 dataReader.Close();
                 response.Close();
 
+                
                 //user.CreateUser() returns a boolean value and adds user to database if no error was encountered
-                if (userData == "true")
+                if (user.CreateUser())/*if(userData == "true")*/
                 {
                     ViewError("Account Added successfully!");
                     Session.Add("email", user.Email);
