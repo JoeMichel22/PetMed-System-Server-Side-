@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Script.Serialization;
+using System.IO;
+using System.Net;
 using Utilities;
 using PetMedLibrary;
 
@@ -12,6 +15,7 @@ namespace PetMed_System_Server_Side_
     public partial class AccountRegistration : System.Web.UI.Page
     {
         User user = new User();
+        string apiURL = "http://cis-iis2.temple.edu/users/tun69277/TermProject/";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -55,10 +59,29 @@ namespace PetMed_System_Server_Side_
             user.PhoneNumber = txtPhoneNumber.Value;
             user.Password = txtPassword.Value;
 
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            String userJson = js.Serialize(user);
+
             try
             {
+                WebRequest request = WebRequest.Create(apiURL + "CreateUser");
+                request.Method = "POST";
+                request.ContentLength = userJson.Length;
+                request.ContentType = "application/json";
+                StreamWriter dataWriter = new StreamWriter(request.GetRequestStream());
+                dataWriter.Write(userJson);
+                dataWriter.Flush();
+                dataWriter.Close();
+                WebResponse response = request.GetResponse();
+                Stream dataStream = response.GetResponseStream();
+                StreamReader dataReader = new StreamReader(dataStream);
+                String userData = dataReader.ReadToEnd();
+                dataReader.Close();
+                response.Close();
+
+                
                 //user.CreateUser() returns a boolean value and adds user to database if no error was encountered
-                if (user.CreateUser())
+                if (user.CreateUser())/*if(userData == "true")*/
                 {
                     ViewError("Account Added successfully!");
                     Session.Add("email", user.Email);

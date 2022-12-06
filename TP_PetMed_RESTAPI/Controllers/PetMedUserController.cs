@@ -7,34 +7,47 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using PetMedLibrary;
+using Utilities;
 
 namespace TP_PetMed_RESTAPI.Controllers
 {
     [Route("PetMedUser/[controller]")]
-    public class PetMedUserController : ControllerBase
+    public class PetMedUserController : Controller
     {
-        User wanted = new User();
+        User user = new User();
+        DataSet ds = new DataSet();
+        DBConnect db = new DBConnect();
+        SqlCommand objCommand = new SqlCommand();
 
-        [HttpGet("GetUser/{email}")]
-        public bool GetUser(string email)
+        [HttpGet]
+        [HttpGet("GetUserProfile")]
+        [HttpGet("GetUserProfile/{userID}")]
+        public User GetUser(string userID)
         {
-            wanted.Email = email;
-
-            if (wanted.GetUser())
+            try
             {
-                return true;
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_LoadUser";
+                objCommand.Parameters.AddWithValue("theId", userID);
+
+                ds = db.GetDataSetUsingCmdObj(objCommand);
+                user.Name = ds.Tables[0].Rows[0]["Name"].ToString();
+                user.Email = ds.Tables[0].Rows[0]["Email"].ToString();
+                user.Address = ds.Tables[0].Rows[0]["Address"].ToString();
+                user.PhoneNumber = ds.Tables[0].Rows[0]["Phone"].ToString();
+
+                return user;
             }
-            else
+            catch (Exception ex)
             {
-                return false;
+                return null;
             }
 
-            
         }
 
 
-        [HttpPost("CreateUser/")]//add in the attribute names
-        public User CreateUser([FromBody] string name, string email, string password, string address, string phoneNumber)
+        [HttpPost("CreateUser")]//add in the attribute names
+        public bool CreateUser([FromBody] string name, string email, string password, string address, string phoneNumber)
         {
             User newUser = new User();
             newUser.Name = name;
@@ -43,7 +56,24 @@ namespace TP_PetMed_RESTAPI.Controllers
             newUser.Address = address;
             newUser.PhoneNumber = phoneNumber;
 
-            return newUser;
+            try
+            {
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_CreateUser";
+                objCommand.Parameters.AddWithValue("@theName", name);
+                objCommand.Parameters.AddWithValue("@theEmail", email);
+                objCommand.Parameters.AddWithValue("@theAddress", address);
+                objCommand.Parameters.AddWithValue("@thePhone", phoneNumber);
+                objCommand.Parameters.AddWithValue("@thePassword", password);
+
+                db.GetDataSetUsingCmdObj(objCommand);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

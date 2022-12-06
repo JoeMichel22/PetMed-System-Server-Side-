@@ -86,6 +86,23 @@ namespace PetMedLibrary
             
         }
 
+        //(overloaded) Method returns a dataset containing the user found based on the ID
+        public DataSet GetUser(string userID)
+        {
+            try
+            {
+                objCommand.CommandType = CommandType.StoredProcedure;
+                objCommand.CommandText = "TP_LoadUser";
+                objCommand.Parameters.AddWithValue("theId", userID);
+
+                return db.GetDataSetUsingCmdObj(objCommand);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
         public string GetPassword(string email)
         {
             try
@@ -128,24 +145,6 @@ namespace PetMedLibrary
                 return false;
             }
         }
-
-        //(overloaded) Method returns a dataset containing the user found based on the ID
-        public DataSet GetUser(string userID)
-        {
-            try
-            {
-                objCommand.CommandType = CommandType.StoredProcedure;
-                objCommand.CommandText = "TP_LoadUser";
-                objCommand.Parameters.AddWithValue("theId", userID);
-
-                return db.GetDataSetUsingCmdObj(objCommand);
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
-        }
-
 
         //getters and setters
         public string UserID

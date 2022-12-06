@@ -1,0 +1,13 @@
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\TP_PetMed_RESTAPI.exe
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\TP_PetMed_RESTAPI.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\TP_PetMed_RESTAPI.deps.json
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\TP_PetMed_RESTAPI.runtimeconfig.json
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\TP_PetMed_RESTAPI.pdb
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\System.Data.SqlClient.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x64\native\sni.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x86\native\sni.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\TP_PetMed_RESTAPI\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
