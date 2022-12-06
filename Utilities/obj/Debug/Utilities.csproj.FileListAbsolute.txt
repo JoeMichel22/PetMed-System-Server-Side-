@@ -1,12 +1,3 @@
-K:\CIS3342\PetMed-System-Server-Side-\Utilities\bin\Debug\Utilities.dll
-K:\CIS3342\PetMed-System-Server-Side-\Utilities\bin\Debug\Utilities.pdb
-K:\CIS3342\PetMed-System-Server-Side-\Utilities\bin\Debug\System.Data.SqlClient.dll
-K:\CIS3342\PetMed-System-Server-Side-\Utilities\bin\Debug\System.Data.SqlClient.xml
-K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
-K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
-K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.CopyComplete
-K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.dll
-K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.pdb
 C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Debug\Utilities.dll
 C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Debug\Utilities.pdb
 C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\bin\Debug\System.Data.SqlClient.dll
@@ -16,3 +7,12 @@ C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Debug\U
 C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.CopyComplete
 C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.dll
 C:\Users\josep\Documents\GitHub\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.pdb
+K:\CIS3342\PetMed-System-Server-Side-\Utilities\bin\Debug\Utilities.dll
+K:\CIS3342\PetMed-System-Server-Side-\Utilities\bin\Debug\Utilities.pdb
+K:\CIS3342\PetMed-System-Server-Side-\Utilities\bin\Debug\System.Data.SqlClient.dll
+K:\CIS3342\PetMed-System-Server-Side-\Utilities\bin\Debug\System.Data.SqlClient.xml
+K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.csproj.CopyComplete
+K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.dll
+K:\CIS3342\PetMed-System-Server-Side-\Utilities\obj\Debug\Utilities.pdb
